@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Elements | Learn HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">HTML Tutorial</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tutorials">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="module-header">
+        <div class="container">
+            <a href="index.html#tutorials" class="btn-back">
+                <i data-lucide="arrow-left"></i> Back to Tutorials
+            </a>
+            <div class="tag-badge mb-3">Module 02</div>
+            <h1 class="text-gradient display-4 fw-bold">HTML Elements</h1>
+            <p class="lead text-dim">The building blocks of HTML. Understand tags, attributes, and content.</p>
+        </div>
+    </header>
+
+    <main class="module-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <section class="reveal">
+                        <h3>What are HTML Elements?</h3>
+                        <p class="text-dim">An HTML element is defined by a start tag, some content, and an end tag.
+                            Elements are what define the structure and layout of a web document.</p>
+
+                        <div class="code-snippet">
+                            <div class="code-snippet-header">
+                                <span class="code-lang">syntax</span>
+                                <i data-lucide="copy" class="text-dim" style="cursor: pointer;"></i>
+                            </div>
+                            <pre><code>&lt;tagname&gt; Content goes here... &lt;/tagname&gt;</code></pre>
+                        </div>
+                    </section>
+
+                    <section class="reveal mt-5">
+                        <h3>Nested HTML Elements</h3>
+                        <p class="text-dim">HTML elements can be nested. This means elements can contain other elements.
+                            For example, the <code>&lt;body&gt;</code> element contains multiple <code>&lt;h1&gt;</code>
+                            and <code>&lt;p&gt;</code> tags.</p>
+
+                        <div class="code-snippet">
+                            <div class="code-snippet-header">
+                                <span class="code-lang">html</span>
+                                <i data-lucide="copy" class="text-dim" style="cursor: pointer;"></i>
+                            </div>
+                            <pre><code>&lt;div&gt;
+    &lt;h1&gt;Main Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </section>
+
+                    <section class="reveal mt-5">
+                        <h3>Empty HTML Elements</h3>
+                        <p class="text-dim">Some elements do not have an end tag. These are called empty elements.
+                            Examples include <code>&lt;br&gt;</code> for a line break and <code>&lt;hr&gt;</code> for a
+                            horizontal rule.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-5">
+        <div class="container text-center">
+            <p>© 2026 HTML Tutorial Website. Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">
+        <i data-lucide="arrow-up"></i>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Premium HTML tutorial for beginners. Learn to build websites from scratch with modern interactive guides.">
+    <title>Learn HTML | Interactive Tutorial</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">HTML Tutorial</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tutorials">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1>Learn HTML</h1>
+                    <p>Build stunning websites from scratch with our modern, simple, and effective tutorials.</p>
+                    <a href="#tutorials" class="btn btn-primary-custom">Start Learning</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container text-center">
+            <h2 class="reveal text-gradient">About This Website</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="reveal lead text-dim">
+                        This platform is designed to help beginners master the building blocks of the web.
+                        We focus on clear explanations, practical examples, and modern best practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TUTORIAL CARDS -->
+    <section id="tutorials" class="section">
+        <div class="container">
+            <h2 class="reveal text-center mb-5">Explore Topics</h2>
+
+            <!-- SEARCH BAR -->
+            <div class="reveal search-container">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" id="tutorialSearch" class="search-input"
+                    placeholder="Search for a topic (e.g. Forms, Tables)...">
+            </div>
+
+            <div class="row g-4" id="tutorialContainer">
+                <div class="col-md-4 tutorial-card">
+                    <a href="introduction.html" class="text-decoration-none">
+                        <div class="card p-4 reveal stagger-1">
+                            <h4 class="card-title">HTML Introduction</h4>
+                            <p class="card-text">Learn what HTML is and how the structure of the modern web works from
+                                the
+                                ground up.</p>
+                            <span class="text-primary fw-bold">Learn More ➔</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 tutorial-card">
+                    <a href="elements.html" class="text-decoration-none">
+                        <div class="card p-4 reveal stagger-2">
+                            <h4 class="card-title">HTML Elements</h4>
+                            <p class="card-text">Understand tags, attributes, and how to structure your content
+                                effectively
+                                for any device.</p>
+                            <span class="text-primary fw-bold">Learn More ➔</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 tutorial-card">
+                    <a href="forms.html" class="text-decoration-none">
+                        <div class="card p-4 reveal stagger-3">
+                            <h4 class="card-title">HTML Forms</h4>
+                            <p class="card-text">Create beautiful, functional forms to collect user data and interact
+                                with
+                                your visitors.</p>
+                            <span class="text-primary fw-bold">Learn More ➔</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 tutorial-card">
+                    <a href="tables.html" class="text-decoration-none">
+                        <div class="card p-4 reveal stagger-4">
+                            <h4 class="card-title">HTML Tables</h4>
+                            <p class="card-text">Display structured information clearly using semantic table elements
+                                and
+                                styles.</p>
+                            <span class="text-primary fw-bold">Learn More ➔</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 tutorial-card">
+                    <a href="images.html" class="text-decoration-none">
+                        <div class="card p-4 reveal stagger-5">
+                            <h4 class="card-title">HTML Images</h4>
+                            <p class="card-text">Master image integration, responsive layouts, and optimization
+                                techniques
+                                for the web.</p>
+                            <span class="text-primary fw-bold">Learn More ➔</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 tutorial-card">
+                    <a href="links.html" class="text-decoration-none">
+                        <div class="card p-4 reveal stagger-6">
+                            <h4 class="card-title">HTML Links</h4>
+                            <p class="card-text">Create seamless navigation and connect your pages to the wider world of
+                                information.</p>
+                            <span class="text-primary fw-bold">Learn More ➔</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="reveal text-center mb-4 text-gradient">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 reveal stagger-1">
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BACK TO TOP -->
+    <div class="back-to-top" id="backToTop">
+        <i data-lucide="arrow-up"></i>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p>© 2026 HTML Tutorial Website. Crafted with precision for the modern web.</p>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>

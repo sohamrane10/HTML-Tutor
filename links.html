@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Links | Learn HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">HTML Tutorial</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tutorials">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="module-header">
+        <div class="container">
+            <a href="index.html#tutorials" class="btn-back">
+                <i data-lucide="arrow-left"></i> Back to Tutorials
+            </a>
+            <div class="tag-badge mb-3">Module 06</div>
+            <h1 class="text-gradient display-4 fw-bold">HTML Links</h1>
+            <p class="lead text-dim">Learn how to create links and navigate between pages or websites.</p>
+        </div>
+    </header>
+
+    <main class="module-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <section class="reveal">
+                        <h3>Hyperlinks</h3>
+                        <p class="text-dim">HTML links are hyperlinks. You can click on a link and jump to another
+                            document or another section of the same document.</p>
+
+                        <div class="code-snippet">
+                            <div class="code-snippet-header">
+                                <span class="code-lang">html</span>
+                                <i data-lucide="copy" class="text-dim" style="cursor: pointer;"></i>
+                            </div>
+                            <pre><code>&lt;a href="https://www.google.com"&gt;This is a link to Google&lt;/a&gt;</code></pre>
+                        </div>
+                    </section>
+
+                    <section class="reveal mt-5">
+                        <h3>Link Target Attribute</h3>
+                        <p class="text-dim">The <code>target</code> attribute specifies where to open the linked
+                            document.</p>
+                        <ul class="text-dim">
+                            <li><strong>_self</strong>: The default. Opens the document in the same window/tab as it was
+                                clicked.</li>
+                            <li><strong>_blank</strong>: Opens the document in a new window or tab.</li>
+                            <li><strong>_parent</strong>: Opens the document in the parent frame.</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-5">
+        <div class="container text-center">
+            <p>© 2026 HTML Tutorial Website. Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">
+        <i data-lucide="arrow-up"></i>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
